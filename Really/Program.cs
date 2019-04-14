@@ -30,20 +30,58 @@ namespace Really
                     Console.WriteLine("You are now in a pit . . .  ");
                     Console.WriteLine("The sand closes in around your fingers . . .");
                     Console.WriteLine("And just as you feel you are about to be engulfed in sand");
-                    Console.WriteLine("A gnarled hand reaches into to grasp you . . . ");
-                    Console.WriteLine("Do you resist the hand?");
-                    response = Console.ReadLine();
+                    Console.WriteLine("A gnarled hand stretches its fingers towards you. . . ");
 
-                    //First loop, loops until you pick no
-                    if (response == "yes")
+                    //I WANTED TO BE ABLE TO USE A "do while loop"                   
+                    string handGrasp;
+                    do
                     {
-                        Console.WriteLine("");
-                    }
-                    else
-                    {
-                        Console.WriteLine("You have a friend in me . . .");
-                    }
-                    
+                        Console.ReadLine();
+                        Console.Clear();
+                        Console.WriteLine("Your options are few:");
+                        Console.WriteLine("Scream");
+                        Console.WriteLine("Fight");
+                        Console.WriteLine("Relent");
+
+
+
+                        Console.WriteLine("Which do you choose?");
+                        handGrasp = Console.ReadLine();
+
+                        if (handGrasp.ToLower() == "scream")
+                        {
+                            Console.WriteLine("You scratch at the hand; recoiling form its grasp\nyou feel your energy waning . . . ");
+                            Console.WriteLine("Seconds later you awaken\ndepleated of energy and no nearer to escape\resistance is futile");
+                        }
+                        else if (handGrasp.ToLower() == "fight")
+                        {
+                            Console.WriteLine("The fingers recoil, but you feel the energy slipping from your body!\resistance is futile");
+                        }
+                        else if (handGrasp.ToLower() == "relent")
+                        {
+                            Console.WriteLine("You reach out towards the hand and it grasps you . . .  ");
+                            Console.WriteLine("just as your were slipping out of consciousness. ");
+                            Console.WriteLine("You awaken from your stupor to find yourself\nlying near a river\nyour an adolescent");
+                        }
+                        else
+                        {
+                            Console.WriteLine("(please make a valid response)");
+                        }
+
+                    } while (handGrasp != "relent");
+
+                    Console.WriteLine("a");
+                    Console.WriteLine("b");
+                    Console.WriteLine("c");
+
+
+
+
+
+
+
+
+
 
 
                 }
