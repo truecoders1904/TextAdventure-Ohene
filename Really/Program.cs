@@ -27,10 +27,29 @@ namespace Really
                 {
                     Console.WriteLine("You grasp the child's hands ");
                     Console.WriteLine("And suddenly realize that your positions have been reversed  ");
+                    Console.WriteLine("You are now in a pit . . .  ");
+                    Console.WriteLine("The sand closes in around your fingers . . .");
+                    Console.WriteLine("And just as you feel you are about to be engulfed in sand");
+                    Console.WriteLine("A gnarled hand reaches into to grasp you . . . ");
+                    Console.WriteLine("Do you resist the hand?");
+                    response = Console.ReadLine();
+
+                    //First loop, loops until you pick no
+                    if (response == "yes")
+                    {
+                        Console.WriteLine("");
+                    }
+                    else
+                    {
+                        Console.WriteLine("You have a friend in me . . .");
+                    }
+                    
+
+
                 }
                 else
                 {
-
+                    //Cowardice path 
                 } 
 
             }
