@@ -38,7 +38,7 @@ namespace Really
                     {
                         Console.ReadLine();
                         Console.Clear();
-                        Console.WriteLine("Your options are few:");
+                        Console.WriteLine("You can only scream, fight, or relent. Which do you choose?");
                         Console.WriteLine("Scream");
                         Console.WriteLine("Fight");
                         Console.WriteLine("Relent");
@@ -50,12 +50,13 @@ namespace Really
 
                         if (handGrasp.ToLower() == "scream")
                         {
-                            Console.WriteLine("You scratch at the hand; recoiling form its grasp\nyou feel your energy waning . . . ");
-                            Console.WriteLine("Seconds later you awaken\ndepleated of energy and no nearer to escape\resistance is futile");
+                            Console.WriteLine("Your mouth begins to fill with sand  . . . ");
+                            Console.WriteLine("You reasses your options");
                         }
                         else if (handGrasp.ToLower() == "fight")
                         {
-                            Console.WriteLine("The fingers recoil, but you feel the energy slipping from your body!\resistance is futile");
+                            Console.WriteLine("The fingers recoil, but you feel the energy slipping from your body . . .\nresistance is futile . . .");
+                            Console.WriteLine("There must be a better option");
                         }
                         else if (handGrasp.ToLower() == "relent")
                         {
